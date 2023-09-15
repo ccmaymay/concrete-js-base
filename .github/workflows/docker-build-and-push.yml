@@ -18,7 +18,7 @@ on:
     branches:
       - 'main'
     tags:
-      - 'v*'
+      - 'thrift-*'
   pull_request:
     branches:
       - 'main'
