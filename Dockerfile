@@ -15,7 +15,7 @@ RUN apt-get update && apt install -y ./google-chrome-stable_current_amd64.deb
 RUN apt-get install -y bison flex libboost-dev
 
 # Install Thrift with patched js server code generation
-RUN git clone -b THRIFT-5674-stable https://github.com/ccmaymay/thrift.git /opt/thrift
+RUN git clone -b v0.19.0 https://github.com/apache/thrift.git /opt/thrift
 WORKDIR /opt/thrift
 RUN ./bootstrap.sh && \
     ./configure --without-c_glib --without-cpp --without-python --without-py3 && \
